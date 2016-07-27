@@ -27,7 +27,7 @@
                             <target>
                                 <property name="buildNumber" value="${build.version}" />
 								<ant antfile="components/distrib/src/main/ant/build_dp.xml"
-                                    target="build-dp" />
+                                     target="build-dp" />
                             </target>
                         </configuration>
                     </execution>
