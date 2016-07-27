@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+DeploymentPackage-SymbolicName: com.fluke.mystique.gateway
+DeploymentPackage-Version: 1.0.0
+
+Name: com.fluke.mystique.gateway.appservice-1.0.0-SNAPSHOT.jar
+Bundle-SymbolicName: com.fluke.mystique.gateway.appservice;singleton:=true
+Bundle-Version: 1.0.0.${maven.timestamp}
+
+Name: com.fluke.mystique.gateway.datastorage-1.1.1.qualifier.jar
+Bundle-SymbolicName: com.fluke.mystique.gateway.datastorage;singleton:=true
+Bundle-Version: 1.1.1.${maven.timestamp}
+
+Name: com.fluke.mystique.gateway.MQTTConnector-1.0.0-SNAPSHOT.jar
+Bundle-SymbolicName: com.fluke.mystique.gateway.MQTTConnector;singleton:=true
+Bundle-Version: 1.0.0.${maven.timestamp}
+
+Name: com.fluke.mystique.gateway.MeasurementProcessor-2.0.3.qualifer.jar
+Bundle-SymbolicName: com.fluke.mystique.gateway.MeasurementProcessor;singleton:=true
+Bundle-Version: 2.0.3.${maven.timestamp}
+
+Name: com.fluke.mystique.gateway.sensor_manager-1.4.1.qualifer.jar
+Bundle-SymbolicName: com.fluke.mystique.gateway.sensor_manager;singleton:=true
+Bundle-Version: 1.4.1.${maven.timestamp}
+
+Name: com.fluke.mystique.gateway.SessionManager-1.2.1.qualifier.jar
+Bundle-SymbolicName: com.fluke.mystique.gateway.session_manager.SessionManager;singleton:=true
+Bundle-Version: 1.2.1.${maven.timestamp}
+
+Name: com.fluke.mystique.gateway.userauthentication-1.0.0.qualifier.jar
+Bundle-SymbolicName: com.fluke.mystique.gateway.userauthentication;singleton:=true
+Bundle-Version: 1.0.0.${maven.timestamp}
+
+Name: com.fluke.mystique.gateway.webservice-1.4.1.qualifier.jar
+Bundle-SymbolicName: com.fluke.mystique.gateway.webservice;singleton:=true
+Bundle-Version: 1.4.1.${maven.timestamp}
