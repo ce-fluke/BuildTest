@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="main"  >
 <target name="main">
-  <property name="buildNumber" value="${maven.timestamp}"/>
+  <property name="buildNumber" value="2016-07-27T22.03.44Z"/>
   <ant antfile="src/main/ant/build_dp.xml" target="build-dp"/>
 </target>
 </project>

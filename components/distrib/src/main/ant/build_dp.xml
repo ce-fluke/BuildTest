@@ -41,10 +41,40 @@ Bundle-SymbolicName: com.fluke.mystique.gateway.webservice;singleton:=true
 Bundle-Version: 1.4.1.${buildNumber}</echo>
 
 		<echo message="Directory structure" />
-		<dirset id="dist.contents" dir="." includes="*"/> 
+	<!-- 	<dirset id="dist.contents" dir="." includes="*"/> 
 		<property name="prop.dist.contents" refid="dist.contents"/>
-		<echo>${prop.dist.contents}</echo>
+		<echo>${prop.dist.contents}</echo> -->
 
+	<!-- 	<dirset id="dist.contents" dir="" includes="*"/> 
+		<property name="prop.dist.contents" refid="dist.contents"/>
+		<echo>${prop.dist.contents}</echo> -->
+
+		 <echo>
+			${ant.version}
+			Java version ${java.version}
+			OS version ${os.name}
+		</echo>
+		
+		<echo>Build number ${buildNumber}</echo>
+		<echo>Build dir ${build.dir}</echo>
+
+		<dirset dir="${build.dir}" includes="*" id="foobar" />
+		<!--<echo>${toString:foobar}</echo>-->
+		
+		<!--<for param="file">
+            <path>
+                <fileset dir=".">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </path>
+			<sequential>
+				<local name="filename" />
+				<basename property="filename" file="@{file}"/>
+				<echo message="${filename}"/>
+			</sequential>
+        </for>-->
+
+		
 	<!-- move everything into place
         <copy    file="${project.build.directory}/../../AppService/target/com.fluke.mystique.gateway.appservice-1.0.0-SNAPSHOT.jar"
                  todir="${project.build.directory}/dp_stage" />

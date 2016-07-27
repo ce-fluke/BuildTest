@@ -14,7 +14,7 @@
 	<properties>
 		<tycho-version>0.21.0</tycho-version>
 		<maven.build.timestamp.format>yyyy-MM-dd'T'HH.mm.ss'Z'</maven.build.timestamp.format>
-		<build.version>${maven.timestamp}</build.version>
+		<build.version>${maven.build.timestamp}</build.version>
 	</properties>
 
 	<repositories>
